@@ -38,13 +38,22 @@ I then look to create a parser and set my pipeline options by using this:
   - https://cloud.google.com/dataflow/docs/guides/setting-pipeline-options#python_4
  
 I then proceeded to create the pipeline where I used the following resources:
-  - Apache Beam documentation
+  Apache Beam documentation
   - https://beam.apache.org/documentation/programming-guide/
   - https://beam.apache.org/documentation/io/built-in/google-bigquery/
   - https://beam.apache.org/documentation/transforms/python/elementwise/filter/#example-3-filtering-with-multiple-arguments
   - https://beam.apache.org/documentation/transforms/python/aggregation/combineperkey/
 
-  - Youtube Plylists:
+  Youtube Playlists:
   - https://www.youtube.com/playlist?list=PLGZpjgRdXegmkexUk_PN8g_V9FRywAad-
   
-  - Read the data from Big Query 
+Given the issues I had earlier with reading straight Cloud storage when running it from the cloud editor, I decided to use the read from bigQuery I/O connector instead.
+
+I then applied my composite transform, which included all the transform components asked from the task.
+
+![image](https://user-images.githubusercontent.com/67463671/185486314-9793a74b-d39a-4b77-ad4c-9c52fcbb3759.png)
+
+
+I would then try to puah the resulting output back into Big Query into a new table.
+
+## Stage 4 (creating the unit test)
