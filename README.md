@@ -60,3 +60,5 @@ I would then try to push the resulting output back into Big Query into a new tab
 I had struggles with understanding how to write the code for this given I've never done a unit test on Apache Beam but I imagined this would follow the guidelines of this page: https://beam.apache.org/documentation/pipelines/test-your-pipeline/
 
 ![image](https://user-images.githubusercontent.com/67463671/185491673-96bf3857-8426-43a7-89bd-ac47c61834e8.png)
+
+The unit test above is to show how the filter of only including records above 20 in the transaction amount should affect the results
