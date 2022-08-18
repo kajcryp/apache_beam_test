@@ -54,6 +54,9 @@ I then applied my composite transform, which included all the transform componen
 ![image](https://user-images.githubusercontent.com/67463671/185486314-9793a74b-d39a-4b77-ad4c-9c52fcbb3759.png)
 
 
-I would then try to puah the resulting output back into Big Query into a new table.
+I would then try to push the resulting output back into Big Query into a new table.
 
 ## Stage 4 (creating the unit test)
+I had struggles with understanding how to write the code for this given I've never done a unit test on Apache Beam but I imagined this would follow the guidelines of this page: https://beam.apache.org/documentation/pipelines/test-your-pipeline/
+
+![image](https://user-images.githubusercontent.com/67463671/185491673-96bf3857-8426-43a7-89bd-ac47c61834e8.png)
