@@ -38,7 +38,8 @@ I then look to create a parser and set my pipeline options by using this:
   - https://cloud.google.com/dataflow/docs/guides/setting-pipeline-options#python_4
  
 I then proceeded to create the pipeline where I used the following resources:
-  Apache Beam documentation
+  
+  Apache Beam documentation:
   - https://beam.apache.org/documentation/programming-guide/
   - https://beam.apache.org/documentation/io/built-in/google-bigquery/
   - https://beam.apache.org/documentation/transforms/python/elementwise/filter/#example-3-filtering-with-multiple-arguments
@@ -47,7 +48,7 @@ I then proceeded to create the pipeline where I used the following resources:
   Youtube Playlists:
   - https://www.youtube.com/playlist?list=PLGZpjgRdXegmkexUk_PN8g_V9FRywAad-
   
-Given the issues I had earlier with reading straight Cloud storage when running it from the cloud editor, I decided to use the read from bigQuery I/O connector instead.
+Given I had issues at the start from reading data straight from Cloud Storage and the uri path, I decided to use the bigQuery I/O connector and read from a BigQuery table. 
 
 I then applied my composite transform, which included all the transform components asked from the task.
 
@@ -61,4 +62,4 @@ I had struggles with understanding how to write the code for this given I've nev
 
 ![image](https://user-images.githubusercontent.com/67463671/185491673-96bf3857-8426-43a7-89bd-ac47c61834e8.png)
 
-The unit test above is to show how the filter of only including records above 20 in the transaction amount should affect the results
+The unit test above is to show how the filter of only including records above 20 in the transaction amount should affect the results. 
